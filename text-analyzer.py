@@ -18,13 +18,13 @@ if paragraph.strip():
     word_count = len(words)
     char_count = len(paragraph)
 
-    st.markdown(f"**Total Words:** `{word_count}`")
+    st.markdown(f"**Total Words:** `{str(word_count)}`")
     st.markdown(f"**Total Characters:** `{char_count}`")
 
     # vowel count
     vowels = "aeiouAEIOU"
     vowel_count = sum(1 for char in paragraph if char in vowels)
-    st.markdown(f"**Total Vowels:** `{vowel_count}`")
+    st.markdown(f"**Total Vowels:** `{str(vowel_count)}`")
 
     # check if "python" exists (case insensitive)
     contains_python = "Python" in paragraph.lower()
